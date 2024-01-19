@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+## <mark>System Requirements to run the Project </mark>
+1. Install VS Code.
+2. Install Mongodb compass
+3. Install nodejs 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## <mark>Commands to run the project</mark>
+1. npm install
+2. npm run both 
 
-## Available Scripts
+## <mark>Details of the project</mark>
+ 1. <mark>FrontEnd</mark>
+* The User Interface of the project is created in  Reactjs. It consist of classification of all the books according to their field and supports features like addition of book into any department by the admin , books return to the library and logout.
 
-In the project directory, you can run:
+* The admin of the library can see all the books issued by the user.
 
-### `npm start`
+2. <mark>Backend </mark>
+* Backend handling of this project is performed in nodejs and it supports features like issuing of books by the user, returning books to the library, and managing all the databases.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. <mark>Database</mark>
+* The database of this application is created by mongodb. It has 3 database namely Books_management, Issued_Book, Library_Managemen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Books_Management database stores all the books which are fetched from the third party api, and all the books are stored in 7 different collections according to their related fields. The name of the collections is Computer Science,Electronics and Communication, Civil Engineering, Mechanical Engineering Biotechnology, Finance and Marketing.
 
-### `npm test`
+* Issued_Book database store  all the information reagrding the books issued by the user and the admin who has issued that book.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Library_Management databse stores all the credentials of the user and admin. Credentials of the user and admin are stored in the book_issued_by_admins and book_issued_to_users collection respectively.
 
-### `npm run build`
+* The library_management databse is created in such a way so that no two users can have same username and email and no two admins can have same username and email.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
